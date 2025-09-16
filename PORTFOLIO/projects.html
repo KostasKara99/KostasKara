@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Projects</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <!-- Lightbox CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <nav>
+        <div class="logo">MyPortfolio</div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Projects Section -->
+    <section class="projects-section">
+      <h1 data-aos="fade-right">My Projects</h1>
+      <div class="grid">
+        <!-- 3D Model 1 -->
+        <div class="card" data-aos="zoom-in">
+          <h3>3D Model 1</h3>
+          <p>A detailed 3D model I created in 3ds Max.</p>
+          <a
+            href="projects/airplane/Screenshot 2025-09-13 182137.png"
+            data-lightbox="3d1"
+            data-title="3D Model 1 - View 1"
+          >
+            <img
+              src="projects/airplane/Screenshot 2025-09-13 182137.png"
+              alt="3D Model 1"
+              class="project-thumbnail"
+            />
+          </a>
+          <a
+            href="projects/airplane/Screenshot 2025-09-13 182137.png"
+            data-lightbox="3d1"
+            data-title="3D Model 1 - View 2"
+          ></a>
+          <a
+            href="projects/airplane/Screenshot 2025-09-13 182137.png"
+            data-lightbox="3d1"
+            data-title="3D Model 1 - View 3"
+          ></a>
+        </div>
+
+        <!-- 3D Model 2 -->
+        <div class="card" data-aos="zoom-in" data-aos-delay="200">
+          <h3>3D Model 2</h3>
+          <p>A detailed 3D model I created in 3ds Max.</p>
+          <a
+            href="projects/Joan/Screenshot 2025-04-07 152350.png"
+            data-lightbox="3d2"
+            data-title="3D Model 2 - View 1"
+          >
+            <img
+              src="projects/Joan/Screenshot 2025-04-07 152350.png"
+              alt="3D Model 2"
+              class="project-thumbnail"
+            />
+          </a>
+          <a
+            href="screenshots/3d2-2.png"
+            data-lightbox="3d2"
+            data-title="3D Model 2 - View 2"
+            style="display: none"
+          ></a>
+        </div>
+
+        <!-- 3D Model 3 -->
+        <div class="card" data-aos="zoom-in" data-aos-delay="400">
+          <h3>3D Model 3</h3>
+          <p>A 3D character model developed for animation and games.</p>
+          <a
+            href="projects/rabbit/Screenshot 2025-09-13 182703.png"
+            data-lightbox="3d3"
+            data-title="3D Model 3 - View 1"
+          >
+            <img
+              src="projects/rabbit/Screenshot 2025-09-13 182703.png"
+              alt="3D Model 3"
+              class="project-thumbnail"
+            />
+          </a>
+          <a
+            href="screenshots/3d3-2.png"
+            data-lightbox="3d3"
+            data-title="3D Model 3 - View 2"
+            style="display: none"
+          ></a>
+        </div>
+
+        <!-- Game Project -->
+        <div class="card" data-aos="zoom-in" data-aos-delay="600">
+          <h3>Game Project</h3>
+          <p>
+            A video game I developed from scratch using Unreal Engine.(Full
+            GamePlay Video)
+          </p>
+          <!-- Video embedded -->
+          <a
+            href="projects/Game/Timeline 1.mov"
+            data-lightbox="game-video"
+            data-title="Gameplay Video"
+          >
+            <img
+              src="projects/Game/main menu.jpg"
+              alt="Game Video"
+              class="project-thumbnail"
+            />
+          </a>
+        </div>
+
+        <!-- Website Project 1 -->
+        <div class="card" data-aos="zoom-in" data-aos-delay="800">
+          <h3>Website 1</h3>
+          <p>
+            A modern responsive website I built with HTML, CSS, and JS.Full code
+            apploaded on GitHub
+          </p>
+          <a
+            href="projects/sites/Screenshot 2025-09-15 135915.png"
+            data-lightbox="site1"
+            data-title="Website 1 - Screenshot 1"
+          >
+            <img
+              src="projects/sites/Screenshot 2025-09-15 135915.png"
+              alt="Website 1"
+              class="project-thumbnail"
+            />
+          </a>
+          <a
+            href="projects/sites/Screenshot 2025-09-15 135915.png"
+            data-lightbox="site1"
+            data-title="Website 1 - Screenshot 2"
+            style="display: none"
+          ></a>
+        </div>
+
+        <!-- Website Project 2 -->
+        <div class="card" data-aos="zoom-in" data-aos-delay="1000">
+          <h3>Website 2</h3>
+          <p>Simple Quiz game with modern style,using CSS,HTML,JS.</p>
+          <a
+            href="projects/sites/Screenshot 2025-09-15 140029.png"
+            data-lightbox="site2"
+            data-title="Website 2 - Screenshot 1"
+          >
+            <img
+              src="projects/sites/Screenshot 2025-09-15 140029.png"
+              alt="Website 2"
+              class="project-thumbnail"
+            />
+          </a>
+          <a
+            href="projects/sites/Screenshot 2025-09-15 140029.png"
+            data-lightbox="site2"
+            data-title="Website 2 - Screenshot 2"
+            style="display: none"
+          ></a>
+        </div>
+      </div>
+    </section>
+    <button id="backToTop" title="Go to top">↑</button>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2025 Kostas Karagiannidis</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({ duration: 800, once: true });
+    </script>
+    <!-- Lightbox JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+
+    <script>
+      const backToTopButton = document.getElementById("backToTop");
+
+      // Show button after scrolling down 300px
+      window.onscroll = function () {
+        if (
+          document.body.scrollTop > 300 ||
+          document.documentElement.scrollTop > 300
+        ) {
+          backToTopButton.style.display = "block";
+        } else {
+          backToTopButton.style.display = "none";
+        }
+      };
+
+      // Scroll to top when clicked
+      backToTopButton.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    </script>
+  </body>
+</html>
