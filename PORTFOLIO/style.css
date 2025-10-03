@@ -187,12 +187,16 @@ header a:hover {
 .card .experience-section ul {
   list-style: none;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  justify-content: center;
 }
 
 .card .experience-section ul li {
   display: flex;
   align-items: center;
-  margin-bottom: 0.6rem;
+  gap: 0.6rem;
 }
 
 .card .experience-section ul li img.tech-logo {
@@ -201,6 +205,11 @@ header a:hover {
   object-fit: contain;
   margin-right: 0.6rem;
   vertical-align: middle;
+}
+
+.card .experience-section ul li span {
+  display: inline-block;
+  line-height: 1;
 }
 
 /* Footer */
@@ -297,7 +306,6 @@ footer .social-icons img {
 .card img {
   width: 100%;
   border-radius: 8px;
-  margin-bottom: 1rem;
 }
 
 .card h3 {
