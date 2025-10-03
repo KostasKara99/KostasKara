@@ -1,1 +1,1 @@
-just a simple portfolio.
+just a simple portfolio
