@@ -48,32 +48,35 @@ header a:hover {
 
 /* Hero */
 .hero {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 2rem;
+  padding: 2rem;
   position: relative;
   background: linear-gradient(135deg, #e7f0ff, #fdfdfd);
-  text-align: left; /* text aligned left since image is next to it */
-  gap: 3rem; /* space between image and text */
+  text-align: left;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 
 .hero .profile-photo {
-  width: 900px; /* bigger size */
-  height: 900px;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
   border: none;
   box-shadow: none;
-  border-radius: 0; /* no circle, no border */
+  border-radius: 0;
   object-fit: cover;
 }
 
-.hero-text {
-  max-width: 600px;
+.hero-text,
+.hero-content {
+  max-width: 700px;
 }
 
 .hero h1 {
-  font-size: 3rem;
+  font-size: clamp(2rem, 4vw, 3rem);
   margin-bottom: 1rem;
 }
 
@@ -82,8 +85,8 @@ header a:hover {
 }
 
 .hero p {
-  font-size: 1.8rem;
-  max-width: 700px;
+  font-size: clamp(1rem, 2.2vw, 1.25rem);
+  max-width: 60ch;
   margin: 0 auto;
   color: #555;
 }
@@ -152,7 +155,7 @@ header a:hover {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
   padding: 2rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  font-size: 1.7rem;
+  font-size: clamp(1rem, 2.4vw, 1.1rem);
 }
 
 .card:hover {
@@ -267,7 +270,7 @@ footer .social-icons img {
 }
 
 .projects-section h1 {
-  font-size: 3rem;
+  font-size: clamp(2rem, 4vw, 3rem);
   color: #0077ff;
   margin-bottom: 3rem;
 }
@@ -304,33 +307,47 @@ footer .social-icons img {
 }
 
 .card p {
-  font-size: 1.5rem;
+  font-size: clamp(0.95rem, 2.2vw, 1.1rem);
   color: #555;
 }
 
 /* Responsive */
+@media (max-width: 1024px) {
+  header nav {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .hero {
+    padding: 1.5rem;
+    gap: 1.5rem;
+  }
+}
+
 @media (max-width: 768px) {
-  .projects-section h1 {
-    font-size: 2.5rem;
-  }
-
-  .card p {
-    font-size: 1.4rem;
-  }
-
-  /* Hero responsive: stack image above text */
   .hero {
     flex-direction: column;
     text-align: center;
   }
-
   .hero .profile-photo {
-    width: 200px;
-    margin-bottom: 2rem;
+    max-width: 280px;
+    margin-bottom: 1.5rem;
   }
-
-  .hero-text {
+  .hero-text,
+  .hero-content {
     max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  header .logo {
+    font-size: 1.4rem;
+  }
+  header ul {
+    gap: 1rem;
+    font-size: 1rem;
+  }
+  .projects-section {
+    padding: 2.5rem 1rem;
   }
 }
 
@@ -389,4 +406,10 @@ footer .social-icons img {
 #backToTop:hover {
   background-color: #005bb5;
   transform: scale(1.1);
+}
+
+/* Global media-safe images */
+img {
+  max-width: 100%;
+  height: auto;
 }
