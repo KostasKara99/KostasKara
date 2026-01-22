@@ -19,13 +19,13 @@ const backToTopButton = document.getElementById("backToTop");
 function handleScroll() {
   // Reveal sections
   revealOnScroll();
-  
+
   // Show/hide back to top button
   if (backToTopButton) {
     if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-      backToTopButton.style.display = "block";
+      backToTopButton.classList.add("show");
     } else {
-      backToTopButton.style.display = "none";
+      backToTopButton.classList.remove("show");
     }
   }
 }
