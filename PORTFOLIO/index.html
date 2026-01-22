@@ -85,7 +85,7 @@
               <h3>Coding</h3>
               <ul>
                 <li>
-                  <img src="images/c.png" alt="c-logo" class="tech-logo" />
+                  <img src="images/C.png" alt="c-logo" class="tech-logo" />
                   <span>C</span>
                 </li>
                 <li>
@@ -98,7 +98,7 @@
                 </li>
                 <li>
                   <img
-                    src="images/javascript-logo.png"
+                    src="images/JavaScript-logo.png"
                     alt="js-logo"
                     class="tech-logo"
                   />
@@ -180,26 +180,6 @@
     <script>
       AOS.init({ duration: 800, once: true });
     </script>
-
-    <script>
-      const backToTopButton = document.getElementById("backToTop");
-
-      // Show button after scrolling down 300px
-      window.onscroll = function () {
-        if (
-          document.body.scrollTop > 300 ||
-          document.documentElement.scrollTop > 300
-        ) {
-          backToTopButton.style.display = "block";
-        } else {
-          backToTopButton.style.display = "none";
-        }
-      };
-
-      // Scroll to top when clicked
-      backToTopButton.addEventListener("click", () => {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-      });
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>

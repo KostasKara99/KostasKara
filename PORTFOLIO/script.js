@@ -13,23 +13,30 @@ function revealOnScroll() {
   });
 }
 
-window.addEventListener("scroll", revealOnScroll);
-revealOnScroll(); // run on page load
+// Back to top button functionality
+const backToTopButton = document.getElementById("backToTop");
 
-<script>
-  const backToTopButton = document.getElementById("backToTop");
-
-  // Show button after scrolling down 300px
-  window.onscroll = function() {
+function handleScroll() {
+  // Reveal sections
+  revealOnScroll();
+  
+  // Show/hide back to top button
+  if (backToTopButton) {
     if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
       backToTopButton.style.display = "block";
     } else {
       backToTopButton.style.display = "none";
     }
-  };
+  }
+}
 
-  // Scroll to top when clicked
+// Set up scroll event listener
+window.addEventListener("scroll", handleScroll);
+revealOnScroll(); // run on page load
+
+// Scroll to top when clicked
+if (backToTopButton) {
   backToTopButton.addEventListener("click", () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
-</script>
+}

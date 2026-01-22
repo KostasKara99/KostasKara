@@ -193,26 +193,6 @@
     </script>
     <!-- Lightbox JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
-
-    <script>
-      const backToTopButton = document.getElementById("backToTop");
-
-      // Show button after scrolling down 300px
-      window.onscroll = function () {
-        if (
-          document.body.scrollTop > 300 ||
-          document.documentElement.scrollTop > 300
-        ) {
-          backToTopButton.style.display = "block";
-        } else {
-          backToTopButton.style.display = "none";
-        }
-      };
-
-      // Scroll to top when clicked
-      backToTopButton.addEventListener("click", () => {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-      });
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
